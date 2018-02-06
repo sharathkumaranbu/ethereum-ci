@@ -1,0 +1,5 @@
+{
+  "fail_on_warning": true,
+  "fail_on_first_error": true,
+  "is_truffle_project": false
+}

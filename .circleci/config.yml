@@ -1,1 +1,13 @@
 version: 2
+jobs:
+  build:
+    docker:
+      - image: sharathkumaranbu/localmythril
+    working_directory: ~/ethereum-ci
+    steps:
+      - checkout
+      - run: cp /scripts/processor.py ~/ethereum-ci/processor.py
+      - run: python processor.py
+      - store_artifacts:
+          path: test-results.log
+          prefix: logs
