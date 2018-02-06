@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: sharathkumaranbu/localmythril
+      - image: sharathkumaranbu/mythril-ci
     working_directory: ~/ethereum-ci
     steps:
       - checkout
